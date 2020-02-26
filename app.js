@@ -13,7 +13,7 @@ var template = "<article>\n\
 var content = '';
 for(var i=0; i<games.length; i++) {
 	var entry = template.replace(/POS/g,(i+1))
-		.replace(/SLUG/g,games[i].slug)
+		.replace(/IMG/g,games[i].slug)
 		.replace(/NAME/g,games[i].name)
 		.replace(/AUTHOR/g,games[i].author)
 		.replace(/TWITTER/g,games[i].twitter)
