@@ -60,7 +60,7 @@ if (e) return next(e)
 res.send(results)
 })
 })
-// add a lesson
+// add lesson
 
 // retrieve a lesson by mongodb ID
 const ObjectID = require('mongodb').ObjectID;
