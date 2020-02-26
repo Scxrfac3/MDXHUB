@@ -64,7 +64,6 @@ res.send(results)
 
 // retrieve a lesson by mongodb ID
 const ObjectID = require('mongodb').ObjectID;
-
 app.get('/collections/:collectionName/:id', urlencodeParser, (req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
 console.log('searching json object with id:', req.params.id)
@@ -73,8 +72,6 @@ if (e) return next(e)
 res.send(result)
 })
 })
-
-
 
 // update a lesson by ID
 app.put('/collections/:collectionName/:id',urlencodeParser, (req, res, next) => {
