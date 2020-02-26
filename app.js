@@ -39,7 +39,7 @@ button.addEventListener('click', function(e) {
 	});
 });
 
-// Setting up random Notification
+// random Notification
 function randomNotification() {
 	var randomItem = Math.floor(Math.random()*games.length);
 	var notifTitle = games[randomItem].name;
@@ -79,3 +79,4 @@ else {
 		loadImages(img);
 	});
 }
+
